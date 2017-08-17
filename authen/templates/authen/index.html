@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PIconet</title>
+    {% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css' %}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{% url 'index' %}">Piconet</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Help</a>
+      </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li><!--
+      <li class="nav-item">
+      <a class="nav-link" href="register.html"> Register </a>
+      </li>-->
+    </ul>
+  </div>
+</nav>
+
+<div class="header-bg">
+	<button style="position: absolute; top: 50%" class="btn"><a class="nav-link" href="register">Register</a></button>
+	</div>
+</body>
+</html>
